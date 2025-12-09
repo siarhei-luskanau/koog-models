@@ -22,5 +22,20 @@ object AdditionalKoogModels {
                     ),
                 contextLength = 128_000,
             )
+        val DEEPSEEK_OCR_3B: LLModel =
+            // "https://ollama.com/library/deepseek-ocr"
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "deepseek-ocr:3b",
+                capabilities =
+                    listOf(
+                        LLMCapability.Document,
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Temperature,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                    ),
+                contextLength = 8_000,
+            )
     }
 }
