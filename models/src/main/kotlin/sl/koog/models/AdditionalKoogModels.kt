@@ -50,6 +50,7 @@ object AdditionalKoogModels {
                         LLMCapability.Temperature,
                         LLMCapability.ToolChoice,
                         LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
                     ),
                 contextLength = 256_000,
             )
@@ -60,11 +61,11 @@ object AdditionalKoogModels {
                 id = "mistral-small3.1",
                 capabilities =
                     listOf(
-                        LLMCapability.Temperature,
+                        LLMCapability.Document,
                         LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Temperature,
                         LLMCapability.Tools,
                         LLMCapability.Vision.Image,
-                        LLMCapability.Document,
                     ),
                 contextLength = 128_000,
             )
@@ -75,11 +76,11 @@ object AdditionalKoogModels {
                 id = "mistral-small3.2",
                 capabilities =
                     listOf(
-                        LLMCapability.Temperature,
+                        LLMCapability.Document,
                         LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Temperature,
                         LLMCapability.Tools,
                         LLMCapability.Vision.Image,
-                        LLMCapability.Document,
                     ),
                 contextLength = 128_000,
             )
