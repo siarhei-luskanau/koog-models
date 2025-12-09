@@ -53,5 +53,35 @@ object AdditionalKoogModels {
                     ),
                 contextLength = 256_000,
             )
+        val MISTRAL_SMALL3_1: LLModel =
+            // "https://ollama.com/library/mistral-small3.1"
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "mistral-small3.1",
+                capabilities =
+                    listOf(
+                        LLMCapability.Temperature,
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                        LLMCapability.Document,
+                    ),
+                contextLength = 128_000,
+            )
+        val MISTRAL_SMALL3_2: LLModel =
+            // "https://ollama.com/library/mistral-small3.2"
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "mistral-small3.2",
+                capabilities =
+                    listOf(
+                        LLMCapability.Temperature,
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                        LLMCapability.Document,
+                    ),
+                contextLength = 128_000,
+            )
     }
 }
