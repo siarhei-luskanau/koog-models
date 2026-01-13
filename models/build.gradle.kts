@@ -14,7 +14,7 @@ java {
 }
 
 dependencies {
-    implementation(libs.koog.prompt.llm)
+    implementation(libs.koog.agents)
 }
 
 publishing {
