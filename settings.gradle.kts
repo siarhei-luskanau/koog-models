@@ -1,4 +1,4 @@
-rootProject.name = "AdditionalKoogModels"
+rootProject.name = "koog-models"
 
 include(":models")
 
