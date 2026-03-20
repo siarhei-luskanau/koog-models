@@ -118,5 +118,53 @@ object AdditionalKoogModels {
                 contextLength = 256_000,
             )
         val QWEN3_30B: LLModel = QWEN3_4B.copy(id = "qwen3:30b")
+        val QWEN_3_5_9B: LLModel =
+            // https://ollama.com/library/qwen3.5
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "qwen3.5:9b",
+                capabilities =
+                    listOf(
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Speculation,
+                        LLMCapability.Temperature,
+                        LLMCapability.ToolChoice,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                    ),
+                contextLength = 256_000,
+            )
+        val QWEN_3_5_4B: LLModel =
+            // https://ollama.com/library/qwen3.5
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "qwen3.5:4b",
+                capabilities =
+                    listOf(
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Speculation,
+                        LLMCapability.Temperature,
+                        LLMCapability.ToolChoice,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                    ),
+                contextLength = 256_000,
+            )
+        val QWEN_3_5_2B: LLModel =
+            // https://ollama.com/library/qwen3.5
+            LLModel(
+                provider = LLMProvider.Ollama,
+                id = "qwen3.5:2b",
+                capabilities =
+                    listOf(
+                        LLMCapability.Schema.JSON.Basic,
+                        LLMCapability.Speculation,
+                        LLMCapability.Temperature,
+                        LLMCapability.ToolChoice,
+                        LLMCapability.Tools,
+                        LLMCapability.Vision.Image,
+                    ),
+                contextLength = 256_000,
+            )
     }
 }
